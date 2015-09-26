@@ -27,17 +27,17 @@ namespace UnitsConverter
         /// <summary>
         /// Uses the multiplication to calculate units.
         /// </summary>
-        /// <param name="dividend">The dividend.</param>
-        /// <param name="divisor">The divisor.</param>
+        /// <param name="unitOne">The unit one.</param>
+        /// <param name="unitTwo">The unit two.</param>
         /// <returns></returns>
-        public static decimal UnitsMultiplication(decimal dividend, decimal divisor)
+        public static decimal UnitsMultiplication(decimal unitOne, decimal unitTwo)
         {
-            if (dividend < 0 || divisor < 0)
+            if (unitOne < 0 || unitTwo < 0)
             {
                 return 0;
             }
 
-            return dividend * divisor;
+            return unitOne * unitTwo;
         }
     }
 }
