@@ -21,6 +21,7 @@ namespace UnitsConverter
             return CommonUtils.UnitsDivision(centimeters, 100);
         }
 
+        #region Convert Kilometers
         /// <summary>
         /// Converts kilometers to miles.
         /// </summary>
@@ -31,7 +32,48 @@ namespace UnitsConverter
             return CommonUtils.UnitsMultiplication(kilometers, 0.621371M);
         }
 
-        #region Miles
+        /// <summary>
+        /// Converts the kilometers to meters.
+        /// </summary>
+        /// <param name="kilometers">The kilometers.</param>
+        /// <returns></returns>
+        public static decimal ConvertKilometersToMeters(decimal kilometers)
+        {
+            return CommonUtils.UnitsMultiplication(kilometers, 1000);
+        }
+
+        /// <summary>
+        /// Converts the kilometers to feet.
+        /// </summary>
+        /// <param name="kilometers">The kilometers.</param>
+        /// <returns></returns>
+        public static decimal ConvertKilometersToFeet(decimal kilometers)
+        {
+            return CommonUtils.UnitsMultiplication(kilometers, 3280.84M);
+        }
+
+        /// <summary>
+        /// Converts the kilometers to inches.
+        /// </summary>
+        /// <param name="kilometers">The kilometers.</param>
+        /// <returns></returns>
+        public static decimal ConvertKilometersToInches(decimal kilometers)
+        {
+            return CommonUtils.UnitsMultiplication(kilometers, 39370.1M);
+        }
+
+        /// <summary>
+        /// Converts the kilometers to yards.
+        /// </summary>
+        /// <param name="kilometers">The kilometers.</param>
+        /// <returns></returns>
+        public static decimal ConvertKilometersToYards(decimal kilometers)
+        {
+            return CommonUtils.UnitsMultiplication(kilometers, 1093.61M);
+        }
+        #endregion
+
+        #region Convert Miles
         /// <summary>
         /// Converts the miles to meters.
         /// </summary>
@@ -102,6 +144,35 @@ namespace UnitsConverter
             return CommonUtils.UnitsMultiplication(miles, 8);
         }
 
+        /// <summary>
+        /// Converts the miles to chains.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToChains(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 80);
+        }
+
+        /// <summary>
+        /// Converts the miles to us leagues.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToUSLeagues(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 0.33333M);
+        }
+
+        /// <summary>
+        /// Converts the miles to nautical leagues.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToNauticalLeagues(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 0.28966M);
+        }
         #endregion
     }
 }
