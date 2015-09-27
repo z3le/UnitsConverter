@@ -44,6 +44,38 @@ namespace UnitsConverter.Tests
             decimal meters = LengthsConverter.ConvertMilesToFeet(20);
 
             Assert.AreEqual(meters, 105600M);
-        } 
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertMilesToInches_Succes()
+        {
+            decimal meters = LengthsConverter.ConvertMilesToInches(5);
+
+            Assert.AreEqual(meters, 316800);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertMilesToYards_Succes()
+        {
+            decimal meters = LengthsConverter.ConvertMilesToYards(5);
+
+            Assert.AreEqual(meters, 8800);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertMilesToNauticalMiles_Succes()
+        {
+            decimal meters = LengthsConverter.ConvertMilesToNauticalMiles(20);
+
+            Assert.AreEqual(meters, 17.37960M);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertMilesToFurlongs_Succes()
+        {
+            decimal meters = LengthsConverter.ConvertMilesToFurlongs(15);
+
+            Assert.AreEqual(meters, 120);
+        }
     }
 }

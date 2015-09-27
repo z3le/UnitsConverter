@@ -61,6 +61,47 @@ namespace UnitsConverter
         {
             return CommonUtils.UnitsMultiplication(miles, 5280M);
         }
+
+        /// <summary>
+        /// Converts the miles to inches.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToInches(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 63360);
+        }
+
+        /// <summary>
+        /// Converts the miles to yards.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToYards(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 1760);
+        }
+
+        /// <summary>
+        /// Converts the miles to nautical miles.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToNauticalMiles(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 0.86898M);
+        }
+
+        /// <summary>
+        /// Converts the miles to furlongs.
+        /// </summary>
+        /// <param name="miles">The miles.</param>
+        /// <returns></returns>
+        public static decimal ConvertMilesToFurlongs(decimal miles)
+        {
+            return CommonUtils.UnitsMultiplication(miles, 8);
+        }
+
         #endregion
     }
 }
