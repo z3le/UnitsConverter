@@ -1,0 +1,29 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnitsConverter.Tests
+{
+    [TestClass]
+    public class LengthsCentimtersConverterTests
+    {
+        [TestMethod]
+        public void LenghtsConverter_ConvertCentimetersToMeters_Succes()
+        {
+            decimal meters = LengthsConverter.ConvertCentimetersToMeters(20);
+
+            Assert.AreEqual(meters, 0.2M);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertCentimetersToMillimeters_Succes()
+        {
+            decimal millimeters = LengthsConverter.ConvertCentimetersToMillimeters(20);
+
+            Assert.AreEqual(millimeters, 200);
+        }
+    }
+}

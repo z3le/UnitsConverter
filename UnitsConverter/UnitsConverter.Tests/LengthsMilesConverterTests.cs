@@ -7,14 +7,6 @@ namespace UnitsConverter.Tests
     public class LengthsMilesConverterTests
     {
         [TestMethod]
-        public void LenghtsConverter_ConvertCentimetersToMeters_Succes()
-        {
-            decimal meters = LengthsConverter.ConvertCentimetersToMeters(20);
-
-            Assert.AreEqual(meters, 0.2M);
-        }
-
-        [TestMethod]
         public void LenghtsConverter_ConvertMilesToMeters_Succes()
         {
             decimal meters = LengthsConverter.ConvertMilesToMeters(20);

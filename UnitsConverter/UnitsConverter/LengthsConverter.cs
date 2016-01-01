@@ -11,6 +11,8 @@ namespace UnitsConverter
     /// </summary>
     public class LengthsConverter
     {
+        #region Centimeters
+
         /// <summary>
         /// Converts the centimeters to meters.
         /// </summary>
@@ -20,6 +22,18 @@ namespace UnitsConverter
         {
             return CommonUtils.UnitsDivision(centimeters, 100);
         }
+
+        /// <summary>
+        /// Converts the centimeters to millimeters.
+        /// </summary>
+        /// <param name="centimeters">The centimeters.</param>
+        /// <returns></returns>
+        public static decimal ConvertCentimetersToMillimeters(decimal centimeters)
+        {
+            return CommonUtils.UnitsMultiplication(centimeters, 10);
+        }
+
+        #endregion
 
         #region Convert Kilometers
         /// <summary>
