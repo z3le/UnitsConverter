@@ -10,68 +10,70 @@ namespace UnitsConverter.Tests
     [TestClass]
     public class LengthsMetersConverterTests
     {
+        public decimal result = 0;
+
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToKilometers_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToKilometers(20);
+            result = LengthsConverter.ConvertMetersToKilometers(20);
 
-            Assert.AreEqual(kilometers, 0.02M);
+            Assert.AreEqual(result, 0.02M);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToMiles_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToMiles(20);
+            result = LengthsConverter.ConvertMetersToMiles(20);
 
-            Assert.AreEqual(kilometers, 0.012427420M);
+            Assert.AreEqual(result, 0.012427420M);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToCentimeters_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToCentimeters(20);
+            result = LengthsConverter.ConvertMetersToCentimeters(20);
 
-            Assert.AreEqual(kilometers, 2000);
+            Assert.AreEqual(result, 2000);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToMillimeters_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToMillimeters(20);
+            result = LengthsConverter.ConvertMetersToMillimeters(20);
 
-            Assert.AreEqual(kilometers, 20000);
+            Assert.AreEqual(result, 20000);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToFeet_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToFeet(20);
+            result = LengthsConverter.ConvertMetersToFeet(20);
 
-            Assert.AreEqual(kilometers, 65.6168M);
+            Assert.AreEqual(result, 65.6168M);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToInches_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToInches(20);
+            result = LengthsConverter.ConvertMetersToInches(20);
 
-            Assert.AreEqual(kilometers, 787.402M);
+            Assert.AreEqual(result, 787.402M);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToYards_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToYards(20);
+            result = LengthsConverter.ConvertMetersToYards(20);
 
-            Assert.AreEqual(kilometers, 21.87220M);
+            Assert.AreEqual(result, 21.87220M);
         }
 
         [TestMethod]
         public void LenghtsConverter_ConvertMetersToDecimeters_Succes()
         {
-            decimal kilometers = LengthsConverter.ConvertMetersToDecimeters(20);
+            result = LengthsConverter.ConvertMetersToDecimeters(20);
 
-            Assert.AreEqual(kilometers, 200);
+            Assert.AreEqual(result, 200);
         }
     }
 }

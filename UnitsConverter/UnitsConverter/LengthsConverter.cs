@@ -11,7 +11,7 @@ namespace UnitsConverter
     /// </summary>
     public class LengthsConverter
     {
-        #region Centimeters
+        #region Convert Centimeters
 
         /// <summary>
         /// Converts the centimeters to meters.
@@ -60,7 +60,7 @@ namespace UnitsConverter
 
         #endregion
 
-        #region Meters
+        #region Convert Meters
 
         /// <summary>
         /// Converts the meters to kilometers.
@@ -296,6 +296,15 @@ namespace UnitsConverter
         {
             return CommonUtils.UnitsMultiplication(miles, 0.28966M);
         }
+        #endregion
+
+        #region Convert Feet
+
+        public static decimal ConvertFeetToMiles(decimal feet)
+        {
+            return CommonUtils.UnitsMultiplication(feet, 0.000189394M);
+        }
+
         #endregion
     }
 }
