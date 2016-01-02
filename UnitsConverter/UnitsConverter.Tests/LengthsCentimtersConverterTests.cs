@@ -25,5 +25,29 @@ namespace UnitsConverter.Tests
 
             Assert.AreEqual(millimeters, 200);
         }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertCentimetersToFeet_Succes()
+        {
+            decimal millimeters = LengthsConverter.ConvertCentimetersToFeet(20);
+
+            Assert.AreEqual(millimeters, 0.656168M);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertCentimetersToInches_Succes()
+        {
+            decimal millimeters = LengthsConverter.ConvertCentimetersToInches(20);
+
+            Assert.AreEqual(millimeters, 7.87402M);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertCentimetersToMicrometer_Succes()
+        {
+            decimal millimeters = LengthsConverter.ConvertCentimetersToMicrometers(20);
+
+            Assert.AreEqual(millimeters, 200000);
+        }
     }
 }

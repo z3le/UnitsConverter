@@ -55,6 +55,7 @@
     <Compile Include="CommonUtilsTests.cs" />
     <Compile Include="LengthsCentimtersConverterTests.cs" />
     <Compile Include="LengthsKilometersConverterTests.cs" />
+    <Compile Include="LengthsMetersConverterTests.cs" />
     <Compile Include="LengthsMilesConverterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

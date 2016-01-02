@@ -33,6 +33,115 @@ namespace UnitsConverter
             return CommonUtils.UnitsMultiplication(centimeters, 10);
         }
 
+        /// <summary>
+        /// Converts the centimeters to feet.
+        /// </summary>
+        /// <param name="centimeters">The centimeters.</param>
+        /// <returns></returns>
+        public static decimal ConvertCentimetersToFeet(decimal centimeters)
+        {
+            return CommonUtils.UnitsMultiplication(centimeters, 0.0328084M);
+        }
+
+        /// <summary>
+        /// Converts the centimeters to inches.
+        /// </summary>
+        /// <param name="centimeters">The centimeters.</param>
+        /// <returns></returns>
+        public static decimal ConvertCentimetersToInches(decimal centimeters)
+        {
+            return CommonUtils.UnitsMultiplication(centimeters, 0.393701M);
+        }
+
+        public static decimal ConvertCentimetersToMicrometers(decimal centimeters)
+        {
+            return CommonUtils.UnitsMultiplication(centimeters, 10000);
+        }
+
+        #endregion
+
+        #region Meters
+
+        /// <summary>
+        /// Converts the meters to kilometers.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToKilometers(decimal meters)
+        {
+            return CommonUtils.UnitsDivision(meters, 1000);
+        }
+
+        /// <summary>
+        /// Converts the meters to miles.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToMiles(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 0.000621371M);
+        }
+
+        /// <summary>
+        /// Converts the meters to centimeters.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToCentimeters(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 100);
+        }
+
+        /// <summary>
+        /// Converts the meters to millimeters.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToMillimeters(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 1000);
+        }
+
+        /// <summary>
+        /// Converts the meters to feet.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToFeet(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 3.28084M);
+        }
+
+        /// <summary>
+        /// Converts the meters to inches.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToInches(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 39.3701M);
+        }
+
+        /// <summary>
+        /// Converts the meters to yards.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToYards(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 1.09361M);
+        }
+
+        /// <summary>
+        /// Converts the meters to decimeters.
+        /// </summary>
+        /// <param name="meters">The meters.</param>
+        /// <returns></returns>
+        public static decimal ConvertMetersToDecimeters(decimal meters)
+        {
+            return CommonUtils.UnitsMultiplication(meters, 10);
+        }
+
         #endregion
 
         #region Convert Kilometers
