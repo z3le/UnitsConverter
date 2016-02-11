@@ -1,4 +1,1 @@
 language: csharp
-
-script: 
-  - ./build.sh --target "Travis"
