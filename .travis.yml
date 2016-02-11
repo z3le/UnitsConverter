@@ -1,5 +1,4 @@
 language: csharp
-solution: UnitsConverter.sln
 
 script: 
   - ./build.sh --target "Travis"
