@@ -351,5 +351,44 @@ namespace UnitsConverter
         }
 
         #endregion
+
+        #region Convert Inches
+
+        /// <summary>
+        /// Converts the inches to meters.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
+        public static decimal ConvertInchesToMeters(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 0.0254M);
+        }
+
+        /// <summary>
+        /// Converts the inches to feet.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
+        public static decimal ConvertInchesToFeet(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 0.0833333M);
+        }
+
+        /// <summary>
+        /// Converts the inches to centimeters.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
+        public static decimal ConvertInchesToCentimeters(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 2.54M);
+        }
+
+        public static decimal ConvertInchesToMilimeters(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 25.4M);
+        }
+
+        #endregion
     }
 }

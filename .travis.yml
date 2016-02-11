@@ -1,1 +1,2 @@
 language: csharp
+solution: UnitsConverter/UnitsConverter.sln
