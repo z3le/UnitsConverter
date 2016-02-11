@@ -300,9 +300,54 @@ namespace UnitsConverter
 
         #region Convert Feet
 
+        /// <summary>
+        /// Converts the feet to miles.
+        /// </summary>
+        /// <param name="feet">The feet.</param>
+        /// <returns></returns>
         public static decimal ConvertFeetToMiles(decimal feet)
         {
             return CommonUtils.UnitsMultiplication(feet, 0.000189394M);
+        }
+
+        /// <summary>
+        /// Converts the feet to kilometers.
+        /// </summary>
+        /// <param name="feet">The feet.</param>
+        /// <returns></returns>
+        public static decimal ConvertFeetToKilometers(decimal feet)
+        {
+            return CommonUtils.UnitsMultiplication(feet, 0.0003048M);
+        }
+
+        /// <summary>
+        /// Converts the feet to meters.
+        /// </summary>
+        /// <param name="feet">The feet.</param>
+        /// <returns></returns>
+        public static decimal ConvertFeetToMeters(decimal feet)
+        {
+            return CommonUtils.UnitsMultiplication(feet, 0.3048M);
+        }
+
+        /// <summary>
+        /// Converts the feet to inches.
+        /// </summary>
+        /// <param name="feet">The feet.</param>
+        /// <returns></returns>
+        public static decimal ConvertFeetToInches(decimal feet)
+        {
+            return CommonUtils.UnitsMultiplication(feet, 12);
+        }
+
+        /// <summary>
+        /// Converts the feet to centimeters.
+        /// </summary>
+        /// <param name="feet">The feet.</param>
+        /// <returns></returns>
+        public static decimal ConvertFeetToCentimeters(decimal feet)
+        {
+            return CommonUtils.UnitsMultiplication(feet, 30.48M);
         }
 
         #endregion
