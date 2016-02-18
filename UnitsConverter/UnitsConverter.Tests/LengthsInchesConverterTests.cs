@@ -43,5 +43,21 @@ namespace UnitsConverter.Tests
 
             Assert.AreEqual(result, 508M);
         }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertInchesToYards_Succes()
+        {
+            result = LengthsConverter.ConvertInchesToYards(20);
+
+            Assert.AreEqual(result, 0.5555560M);
+        }
+
+        [TestMethod]
+        public void LenghtsConverter_ConvertInchesToDecimeters_Succes()
+        {
+            result = LengthsConverter.ConvertInchesToDecimeters(20);
+
+            Assert.AreEqual(result, 5.08M);
+        }
     }
 }

@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsConverter", "UnitsConv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsConverter.Tests", "UnitsConverter.Tests\UnitsConverter.Tests.csproj", "{83ABDACE-C4E2-40F6-999E-BD1541A9851D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Master", "Master", "{77C54ABA-B6CB-453B-94F1-CEC225C98478}"
-	ProjectSection(SolutionItems) = preProject
-		..\.travis.yml = ..\.travis.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

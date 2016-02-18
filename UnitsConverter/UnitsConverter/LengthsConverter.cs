@@ -384,9 +384,34 @@ namespace UnitsConverter
             return CommonUtils.UnitsMultiplication(inches, 2.54M);
         }
 
+        /// <summary>
+        /// Converts the inches to milimeters.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
         public static decimal ConvertInchesToMilimeters(decimal inches)
         {
             return CommonUtils.UnitsMultiplication(inches, 25.4M);
+        }
+
+        /// <summary>
+        /// Converts the inches to yards.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
+        public static decimal ConvertInchesToYards(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 0.0277778M);
+        }
+
+        /// <summary>
+        /// Converts the inches to decimeters.
+        /// </summary>
+        /// <param name="inches">The inches.</param>
+        /// <returns></returns>
+        public static decimal ConvertInchesToDecimeters(decimal inches)
+        {
+            return CommonUtils.UnitsMultiplication(inches, 0.254M);
         }
 
         #endregion
